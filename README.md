@@ -1,39 +1,37 @@
-# CreditWise Loan System - (In Progress)
+# 💳 CreditWise Loan System
 
 ## 📌 Overview
-CreditWise Loan System is a **Machine Learning–powered loan approval system** designed to help financial institutions make **fast, accurate, and unbiased loan approval decisions**. The system analyzes historical loan application data to predict whether a loan should be **Approved (1)** or **Rejected (0)** before final human verification.
+**CreditWise Loan System** is a **Machine Learning–based loan approval system** designed to assist financial institutions in making **fast, accurate, and unbiased loan approval decisions**.
 
-This project addresses inefficiencies in traditional **manual verification processes**, which are often time-consuming, inconsistent, and prone to bias.
+The system analyzes historical loan application data to predict whether a loan should be **Approved (1)** or **Rejected (0)**, serving as a **decision-support tool** before final human verification.
 
 ---
 
 ## 🏦 Problem Statement
-A mid-sized financial institution provides personal and home loans across **urban and rural regions of India**. Due to manual verification of income proofs, employment details, and credit history:
+A financial institution operating across **urban and rural regions of India** faced challenges due to manual loan verification processes:
 
-- Good customers are sometimes rejected → **loss of business**
-- High-risk customers are sometimes approved → **financial losses**
+- Creditworthy applicants being rejected → **loss of business**
+- High-risk applicants being approved → **financial losses**
+- Time-consuming, inconsistent, and biased decisions
 
-To solve this, the bank needs an **intelligent loan approval system** powered by **Machine Learning** that can:
-- Analyze applicant data automatically
-- Learn hidden patterns from past applications
-- Assist loan officers with reliable predictions
+To overcome these issues, the institution required an **intelligent Machine Learning–based solution** to automate and support loan approval decisions.
 
 ---
 
 ## 🎯 Project Objective
-- Build a **binary classification model** to predict loan approval status
-- Reduce processing time and human bias
-- Improve approval accuracy and risk assessment
+- Build a **binary classification model** to predict loan approval status  
+- Reduce manual effort and human bias  
+- Improve approval accuracy and risk assessment  
 
-**Target Variable:**
-- `Loan_Approved`
-  - `1` → Approved
-  - `0` → Rejected
+### 🎯 Target Variable
+- **Loan_Approved**
+  - `1` → Approved  
+  - `0` → Rejected  
 
 ---
 
 ## 📊 Dataset Description
-Each row represents a **loan applicant** with personal, financial, and credit-related attributes.
+Each row represents a **loan applicant** with demographic, financial, and credit-related information.
 
 ### 🔹 Features
 | Column Name | Description |
@@ -61,36 +59,33 @@ Each row represents a **loan applicant** with personal, financial, and credit-re
 ---
 
 ## 🧠 Machine Learning Approach
-- Data Cleaning & Preprocessing
-- Exploratory Data Analysis (EDA)
-- Feature Encoding & Scaling
-- Model Training (e.g., Naive Bayes / Logistic Regression / Tree-based models)
-- Model Evaluation using accuracy and classification metrics
+1. Data Cleaning & Preprocessing  
+2. Exploratory Data Analysis (EDA)  
+3. Feature Encoding & Scaling  
+4. Model Training & Comparison  
+   - Logistic Regression  
+   - K-Nearest Neighbors (KNN)  
+   - Naive Bayes  
+5. Model Evaluation & Selection  
+
+### 📈 Model Selection
+**Naive Bayes achieved higher Precision and Recall scores** compared to Logistic Regression and KNN, making it the final model.
+
+➡️ **Final Model Used:** Naive Bayes  
 
 ---
 
 ## 🛠️ Tech Stack
-- **Programming Language:** Python
-- **Libraries:** NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn
-- **ML Techniques:** Classification Algorithms
+- Python  
+- NumPy, Pandas, Scikit-learn  
+- Matplotlib, Seaborn  
 
 ---
 
-## 🚀 Expected Outcomes
-- Faster loan approval decisions
-- Reduced financial risk
-- Consistent and unbiased predictions
-- Improved customer satisfaction
+## 🌐 Deployment
+The trained Naive Bayes model is prepared for deployment using **Streamlit** for real-time loan approval prediction.
 
 ---
 
-## 📌 Future Enhancements
-- Model deployment using Flask/FastAPI
-- Integration with web-based loan portals
-- Explainable AI for transparency
-- Real-time decision support system
-
----
-
-
-
+## 📌 Project Status
+✅ Project Completed
